@@ -36,5 +36,3 @@ App will be public, so below concerns should be reviewed
 * Python 
 * Selenium 
 * Behave
-
-#### QA Engineer : Altan
