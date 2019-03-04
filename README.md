@@ -12,7 +12,44 @@ Below functions will be tested
 
 ### Test cases
 
-//TODO link will be added
+#### User Creation Function
+
+1. a user should be able to create an account with a valid username and valid password 
+2. a user should not be able to create an account with the same username and password 
+3. a user should not be able to create an account with similar same username and password 
+4. a user should not be able to create a username has a more than 30 character
+5. a user should be able to create a username with the supported format(Letters, digits and @/./+/-/_ only)
+
+
+#### Login Function 
+
+1. a user should be able to login with a valid username and valid password 
+2. a user should not be able to login with a valid username and an invalid password
+3. a user should not be the able login page for both, when the field is blank and Submit button is clicked
+4. a user should be able to see invalid login message
+
+
+#### Logout Function
+
+1. a user should be able to log out
+2. a user should not be able add RSS feed after logout
+
+
+##### Get Feed Function
+
+1. a registered user should be able to add new feed sources
+2. a user should be able to get get updates
+3. a user should be able to see below data 
+* Added by
+* Feed URL
+* Date added
+* Last updated
+* Last checked
+
+* Title
+* Date
+* Author
+* Comments
 
 ### In scope
 * Computer users
