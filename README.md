@@ -19,7 +19,7 @@ Below functions will be tested
 3. a user should not be able to create an account with similar same username and password 
 4. a user should not be able to create a username has a more than 30 character
 5. a user should be able to create a username with the supported format(Letters, digits and @/./+/-/_ only)
-
+6. a user should not be able to create a password only numeric
 
 #### Login Function 
 
