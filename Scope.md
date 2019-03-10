@@ -1,8 +1,8 @@
 Create a RSS annotation tool with the following requirements
 ============================================================
 
-The idea is to create a simple RSS scraper which saves the feeds to a
-database. Users should be able to view the feed and they should be able to annotate it with comments attached to the feed item.
+The idea is to create a simple RSS scraper which saves the feeds to a database. 
+Users should be able to view the feed and they should be able to annotate it with comments attached to the feed item.
 
 Some functionality which should be there:
 =========================================
