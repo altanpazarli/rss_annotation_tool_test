@@ -23,8 +23,5 @@ class Web(object):
     def find_by_css(self, css):
         return self._web_driver_wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, css)))
 
-    def find_by_xpath(self, xpath):
-        return self._web_driver_wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
-
-    def finds_by_xpath(self, xpath):
-        return self._web_driver_wait.until(EC.presence_of_all_elements_located((By.XPATH, xpath)))
+    def find_list_by_css(self, css):
+        return self._web_driver_wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, css)))

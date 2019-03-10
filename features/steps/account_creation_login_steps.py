@@ -1,7 +1,6 @@
 from behave import *
-import time
 
-valid_username = "validusername10"
+valid_username = "validusername12"
 valid_password = "newuser011"
 invalid_username = "inval!dusername"
 invalid_password = "p$W0rD"
@@ -19,15 +18,15 @@ def user_fills_related_forms(context):
     context.web.find_by_id("id_password2").send_keys(valid_password)
 
 
-@when("the user fills related forms with invalid data")
-def step_impl(context):
+@step("the user fills related forms with invalid data")
+def user_fills_invalid_data(context):
     context.web.find_by_id("id_username").send_keys(invalid_username)
     context.web.find_by_id("id_password1").send_keys(invalid_password)
     context.web.find_by_id("id_password2").send_keys(invalid_password)
 
 
 @step("the user clicks signup button")
-def user_clicks_signup_button(context):
+def user_clicks_submit_button(context):
     context.web.find_by_id("submit-id-submit").click()
 
 
