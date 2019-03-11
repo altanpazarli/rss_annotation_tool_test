@@ -150,8 +150,7 @@ The app will be public, so below concerns should be reviewed
 
 ### Environment
 * Google Chrome v.72 
-//TODO 
-* Firefox v.65
+* TODO // Firefox v.65
 
 ### Techs
 * Python 
