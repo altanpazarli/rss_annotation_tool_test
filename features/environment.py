@@ -1,5 +1,3 @@
-from behave.fixture import use_fixture_by_tag
-from behave import use_step_matcher
 from web_source.web_factory import get_web
 
 

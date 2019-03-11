@@ -1,6 +1,5 @@
 from behave import *
 from features.steps.account_creation_login_steps import *
-import time
 
 
 @given("the registered user logged in")
