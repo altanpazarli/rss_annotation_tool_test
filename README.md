@@ -16,43 +16,43 @@ Below functions will be tested
 - Go to register page
 - Fill related forms with valid data
 - Click Submit button
-Expected: Successful User Creation 
-Result: :white_check_mark: 
+- Expected: Successful User Creation 
+- Result: :white_check_mark: 
 
 2. a user should not be able to create an account with the same username and password 
 - Go to register page
 - Fill related forms with same username and password
 - Click Submit button
-Expected: No User Creation - Warning 
-Result: :white_check_mark: 
+- Expected: No User Creation - Warning 
+- Result: :white_check_mark: 
 
 3. a user should not be able to create an account with a similar same username and password 
 - Go to register page
 - Fill related forms with "user1" username and "user123" password
 - Click Submit button
-Expected: No User Creation - Warning 
-Result: :white_check_mark:
+- Expected: No User Creation - Warning 
+- Result: :white_check_mark:
 
 4. a user should not be able to create a username has a more than 30 character
 - Go to register page
 - Fill related forms with "user1" username and "user123" password
 - Click Submit button
-Expected: No User Creation - Warning 
-Result: :white_check_mark: 
+- Expected: No User Creation - Warning 
+- Result: :white_check_mark: 
 
 5. a user should be able to create a username with the supported format(Letters, digits and @/./+/-/_ only)
 - Go to register page
 - Fill related forms with "user_1" username and "p@ssW0rD" password
 - Click Submit button
-Expected: Successful User Creation 
-Result: :white_check_mark: 
+- Expected: Successful User Creation 
+- Result: :white_check_mark: 
 
 6. a user should not be able to create a password only numerically
 - Go to register page
 - Fill related forms with "user1" username and "123456789" password
 - Click Submit button
-Expected: No User Creation - Warning 
-Result: :white_check_mark: 
+- Expected: No User Creation - Warning 
+- Result: :white_check_mark: 
 
 #### Login Function 
 
@@ -60,22 +60,22 @@ Result: :white_check_mark:
 - Go to login page
 - Fill related forms with valid data
 - Click Submit button
-Expected: Successful Login 
-Result: :white_check_mark: 
+- Expected: Successful Login 
+- Result: :white_check_mark: 
 
 2. a user should not be able to login with a valid username and an invalid password
 - Go to login page
 - Fill related forms with valid username and invalid password
 - Click Submit button
-Expected: Unsuccessful Login - Warning 
-Result: :white_check_mark: 
+- Expected: Unsuccessful Login - Warning 
+- Result: :white_check_mark: 
 
 3. a user should not be the able login with blank field/s
 - Go to login page
 - Leave blank form/s
 - Click Submit button
-Expected: Unsuccessful Login - Warning 
-Result: :white_check_mark: 
+- Expected: Unsuccessful Login - Warning 
+- Result: :white_check_mark: 
 
 
 #### Logout Function
@@ -83,15 +83,15 @@ Result: :white_check_mark:
 1. a user should be able to log out
 - go to feeds page
 - click logout
-Expected: Successful Logout 
-Result: :white_check_mark: 
+- Expected: Successful Logout 
+- Result: :white_check_mark: 
 
 2. a user should not be able to add RSS feed & see My Feeds after logout
 - go to feeds page
 - click logout
 - refresh page & back
-Expected: No Add & My Feeds button - Successful Logout 
-Result: :white_check_mark: 
+- Expected: No Add & My Feeds button - Successful Logout 
+- Result: :white_check_mark: 
 
 ##### Get Feed Function
 
@@ -99,21 +99,21 @@ Result: :white_check_mark:
 - Login 
 - Click New Feed 
 - Add http://feeds.feedburner.com/TechCrunch/
-Expected: No User Creation - Warning 
-Result: :white_check_mark: 
+- Expected: No User Creation - Warning 
+- Result: :white_check_mark: 
 
 2. a user should be able to get updates
 - go to feeds
 - click TechCrunch 
 - click check for updates
-Expected: Get updates 
-Result: :white_check_mark: 
+- Expected: Get updates 
+- Result: :white_check_mark: 
 
 3. a user should be able to add comment in markdown format
 - go to favorite feed
 - click first feed
 - add comment in markdown format
-Expected: User sees comments in correct format 
+- Expected: User sees comments in correct format 
 Results: :white_check_mark: 
 
 4. a user should be able to see below data 
@@ -131,8 +131,8 @@ Results: :white_check_mark:
 - go to favorite feed
 - click first feed
 - check above data
-Expected: Fields and values should be visible and correct 
-Result: :white_check_mark: 
+- Expected: Fields and values should be visible and correct 
+- Result: :white_check_mark: 
 
 ### In scope
 * Computer users
