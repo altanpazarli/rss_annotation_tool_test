@@ -8,6 +8,24 @@ Below functions will be tested
 * Logout
 * Get feed
 
+### In scope
+* Computer users
+* Only EN language users
+
+### Out Of Scope
+* Mobile users
+* Mobile Browsers
+
+### Risks
+The app will be public, so below concerns should be reviewed 
+* Load test
+* Performance test
+* Security test
+
+### Environment
+* Google Chrome v.72 
+* TODO // Firefox v.65
+
 ### Test cases
 
 #### User Creation Function
@@ -57,21 +75,21 @@ Below functions will be tested
 #### Login Function 
 
 1. a user should be able to login with a valid username and valid password 
-- Go to login page
+- Go to the login page
 - Fill related forms with valid data
 - Click Submit button
 - Expected: Successful Login 
 - Result: :white_check_mark: 
 
 2. a user should not be able to login with a valid username and an invalid password
-- Go to login page
-- Fill related forms with valid username and invalid password
+- Go to the login page
+- Fill related forms with a valid username and invalid password
 - Click Submit button
 - Expected: Unsuccessful Login - Warning 
 - Result: :white_check_mark: 
 
 3. a user should not be the able login with blank field/s
-- Go to login page
+- Go to the login page
 - Leave blank form/s
 - Click Submit button
 - Expected: Unsuccessful Login - Warning 
@@ -93,7 +111,7 @@ Below functions will be tested
 - Expected: No Add & My Feeds button - Successful Logout 
 - Result: :white_check_mark: 
 
-##### Get Feed Function
+#### Get Feed Function
 
 1. a registered user should be able to add new feed sources
 - Login 
@@ -109,11 +127,11 @@ Below functions will be tested
 - Expected: Get updates 
 - Result: :white_check_mark: 
 
-3. a user should be able to add comment in markdown format
+3. a user should be able to add a comment in markdown format
 - go to favorite feed
 - click first feed
-- add comment in markdown format
-- Expected: User sees comments in correct format 
+- add a comment in markdown format
+- Expected: User sees comments in the correct format 
 Results: :white_check_mark: 
 
 4. a user should be able to see below data 
@@ -134,23 +152,23 @@ Results: :white_check_mark:
 - Expected: Fields and values should be visible and correct 
 - Result: :white_check_mark: 
 
-### In scope
-* Computer users
-* Only EN language users
+#### Concerns 
+* Login and Registration features may give specific messages.
+* id attributes can be helpful for QAs for selecting items
 
-### Out Of Scope
-* Mobile users
-* Mobile Browsers
+#### Bugs
+1. Username and comment section overlapping
+step to reproduce
+* go to feed page
+* add comment 
+Expected: Username and comment section should be aligned
+Actual: Overlapping
 
-### Risks
-The app will be public, so below concerns should be reviewed 
-* Load test
-* Performance test
-* Security test
-
-### Environment
-* Google Chrome v.72 
-* TODO // Firefox v.65
+2. There are misleading data from a year ago
+* go to feeds
+* go to Tweakers Mixed RSS Feed
+Expected: Feeds should be sorted periodically
+Actual: Feeds jumped a week to a year
 
 ### Techs
 * Python 
