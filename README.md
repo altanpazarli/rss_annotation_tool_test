@@ -185,7 +185,7 @@ Actual: Feeds jumped a week to a year
 * go to automation project
 * run ```pip install -r requirements.txt```
 * run ```behave -f allure_behave.formatter:AllureFormatter -o allure/results ./features```
-* run ```allure generate allure/results/ -o allure/reports```
+* run ```allure generate allure/results/ -o allure/reports --clean```
 Generated report will be located as a ```allure/reports/index.html```
 
 
