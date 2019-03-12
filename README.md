@@ -183,7 +183,10 @@ Actual: Feeds jumped a week to a year
 #### Usage
 * open terminal 
 * go to automation project
-* pip ```pip install -r requirements.txt```
-* run ```behave```
+* run ```pip install -r requirements.txt```
+* run ```behave -f allure_behave.formatter:AllureFormatter -o allure/results ./features```
+* run ```allure generate allure/results/ -o allure/reports```
+Generated report will be located as a ```allure/reports/index.html```
+
 
 Notice: Chrome driver in project compatible with MacOS

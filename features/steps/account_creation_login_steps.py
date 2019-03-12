@@ -5,10 +5,14 @@ valid_password = "newuser011"
 invalid_username = "inval!dusername"
 invalid_password = "p$W0rD"
 
+signup_page = "http://localhost:8000/accounts/register/"
+login_page = "http://localhost:8000/accounts/login/"
+feeds_page = "http://localhost:8000/feeds/"
+
 
 @given("the user is on the signup page")
 def user_on_signup_page(context):
-    context.web.open("http://localhost:8000/accounts/register/")
+    context.web.open(signup_page)
 
 
 @when("the user fills related forms")
@@ -36,7 +40,7 @@ def user_clicks_login_button(context):
 
 
 @then("the user should be redirected to feeds page")
-def user_redirected_to_login(context):
+def user_redirected_to_feed(context):
     current_url = context.web.current_url()
     page_url: object = "http://localhost:8000/feeds/"
     assert current_url == page_url
@@ -50,7 +54,7 @@ def user_sees_welcome_message(context):
 
 @given("the registered user on the login page")
 def user_on_login_page(context):
-    context.web.open("http://localhost:8000/accounts/login/")
+    context.web.open(login_page)
 
 
 @when("the user fills valid credentials")
