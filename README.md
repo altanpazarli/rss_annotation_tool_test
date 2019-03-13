@@ -30,127 +30,140 @@ The app will be public, so below concerns should be reviewed
 
 #### User Creation Function
 
-1. a user should be able to create an account with a valid username and valid password 
+1. a user should be able to create an account with a valid username and valid password :white_check_mark: 
+```
 - Go to register page
 - Fill related forms with valid data
 - Click Submit button
 - Expected: Successful User Creation 
-- Result: :white_check_mark: 
+```
 
-2. a user should not be able to create an account with the same username and password 
+2. a user should not be able to create an account with the same username and password :white_check_mark: 
+```
 - Go to register page
 - Fill related forms with same username and password
 - Click Submit button
 - Expected: No User Creation - Warning 
-- Result: :white_check_mark: 
+```
 
-3. a user should not be able to create an account with a similar same username and password 
+3. a user should not be able to create an account with a similar same username and password :white_check_mark: 
+```
 - Go to register page
 - Fill related forms with "user1" username and "user123" password
 - Click Submit button
 - Expected: No User Creation - Warning 
-- Result: :white_check_mark:
+```
 
-4. a user should not be able to create a username has a more than 30 character
+4. a user should not be able to create a username has a more than 30 character :white_check_mark: 
+```
 - Go to register page
 - Fill related forms with "user1" username and "user123" password
 - Click Submit button
 - Expected: No User Creation - Warning 
-- Result: :white_check_mark: 
+``` 
 
-5. a user should be able to create a username with the supported format(Letters, digits and @/./+/-/_ only)
+5. a user should be able to create a username with the supported format(Letters, digits and @/./+/-/_ only) :white_check_mark: 
+```
 - Go to register page
 - Fill related forms with "user_1" username and "p@ssW0rD" password
 - Click Submit button
 - Expected: Successful User Creation 
-- Result: :white_check_mark: 
+``` 
 
-6. a user should not be able to create a password only numerically
+6. a user should not be able to create a password only numerically :white_check_mark: 
+```
 - Go to register page
 - Fill related forms with "user1" username and "123456789" password
 - Click Submit button
 - Expected: No User Creation - Warning 
-- Result: :white_check_mark: 
+``` 
 
 #### Login Function 
 
-1. a user should be able to login with a valid username and valid password 
+1. a user should be able to login with a valid username and valid password :white_check_mark: 
+```
 - Go to the login page
 - Fill related forms with valid data
 - Click Submit button
 - Expected: Successful Login 
-- Result: :white_check_mark: 
+``` 
 
-2. a user should not be able to login with a valid username and an invalid password
+2. a user should not be able to login with a valid username and an invalid password :white_check_mark: 
+```
 - Go to the login page
 - Fill related forms with a valid username and invalid password
 - Click Submit button
 - Expected: Unsuccessful Login - Warning 
-- Result: :white_check_mark: 
+``` 
 
-3. a user should not be the able login with blank field/s
+3. a user should not be the able login with blank field/s :white_check_mark: 
+```
 - Go to the login page
 - Leave blank form/s
 - Click Submit button
 - Expected: Unsuccessful Login - Warning 
-- Result: :white_check_mark: 
+``` 
 
 
 #### Logout Function
 
-1. a user should be able to log out
+1. a user should be able to log out :white_check_mark: 
+```
 - go to feeds page
 - click logout
 - Expected: Successful Logout 
-- Result: :white_check_mark: 
+``` 
 
-2. a user should not be able to add RSS feed & see My Feeds after logout
+2. a user should not be able to add RSS feed & see My Feeds after logout :white_check_mark: 
+```
 - go to feeds page
 - click logout
 - refresh page & back
 - Expected: No Add & My Feeds button - Successful Logout 
-- Result: :white_check_mark: 
+``` 
 
 #### Get Feed Function
 
-1. a registered user should be able to add new feed sources
+1. a registered user should be able to add new feed sources :white_check_mark: 
+```
 - Login 
 - Click New Feed 
 - Add http://feeds.feedburner.com/TechCrunch/
 - Expected: No User Creation - Warning 
-- Result: :white_check_mark: 
+``` 
 
-2. a user should be able to get updates
+2. a user should be able to get updates :white_check_mark: 
+```
 - go to feeds
 - click TechCrunch 
 - click check for updates
 - Expected: Get updates 
-- Result: :white_check_mark: 
+``` 
 
-3. a user should be able to add a comment in markdown format
+3. a user should be able to add a comment in markdown format :white_check_mark: 
+```
 - go to favorite feed
 - click first feed
 - add a comment in markdown format
 - Expected: User sees comments in the correct format 
-Results: :white_check_mark: 
+```
 
-4. a user should be able to see below data 
+4. a user should be able to see below data :white_check_mark: 
 * Added by
 * Feed URL
 * Date added
 * Last updated
 * Last checked
-
 * Title
 * Date
 * Author
 * Comments
-
+```
 - go to favorite feed
 - click first feed
 - check above data
 - Expected: Fields and values should be visible and correct 
-- Result: :white_check_mark: 
+``` 
 
 #### Concerns 
 * Login and Registration features may give specific messages.
@@ -163,12 +176,6 @@ step to reproduce
 * add comment 
 Expected: Username and comment section should be aligned
 Actual: Overlapping
-
-2. There are misleading data from a year ago
-* go to feeds
-* go to Tweakers Mixed RSS Feed
-Expected: Feeds should be sorted periodically
-Actual: Feeds jumped a week to a year
 
 ### Techs
 * Python 
