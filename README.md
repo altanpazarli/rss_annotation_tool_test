@@ -171,11 +171,13 @@ The app will be public, so below concerns should be reviewed
 
 #### Bugs
 1. Username and comment section overlapping
-step to reproduce
-* go to feed page
-* add comment 
+Step to reproduce
+```
+- go to feed page
+- add comment 
 Expected: Username and comment section should be aligned
 Actual: Overlapping
+```
 
 ### Techs
 * Python 
